@@ -1,0 +1,8 @@
+.status
+ .minipic
+ %img{:src =>"#{$feeditem->from}.jpg"}
+ .message= implode($feeditem->msg->contents)
+ .from
+  = person_link(SocialHelpers::profile('',$feeditem->from, 'displayname'), $feeditem->from)
+ .actions
+  %a{:href="reply.php?reply=#{$feeditem->guid}&page=#{$currentsection}&returnto=#{$currentsection}"}="Reply"

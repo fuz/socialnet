@@ -1,0 +1,117 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.menu {
+	top: 15%;
+	float: right;
+	clear: none;
+	padding-right: 1em;
+	position: relative;
+
+}
+
+.actions {
+	float: right;
+}
+
+#content {
+	padding: 1ex;
+	clear: both;
+	font-family: Tahoma;
+}
+
+.statusupdate h1 {
+	color: 	#439400;
+	font-size: 16pt;
+	font-family: Verdana;
+}
+
+.statusupdate {
+	margin-left: 20%;
+	padding: 1ex;
+	width: 650px;
+	background-color: #A9F16C;
+}
+
+.statusupdate select {
+	vertical-align:middle;
+}
+
+.inner {
+	position: relative;
+	left: 2em;
+}
+
+.statusupdate textarea {
+
+	width: 500px;
+	height: 70px;
+	vertical-align: middle;
+}
+
+textarea {
+	background-color: #8EF13C;
+	border: solid #7EEF3C 1px;
+}
+
+.reply textarea {
+	width: 250px;
+	height: 70px;
+	vertical-align: middle;
+}
+
+.reply input[type="submit"] {
+	height: 70px;
+	width: 50px;
+	vertical-align: middle;
+}
+
+input[type="submit"] {
+	background-color: #8EF13C;
+	border: solid #7EEF3C 1px;
+}
+
+.statusupdate input[type="submit"] {
+	width: 50px;
+	height: 70px;
+	vertical-align: middle;
+}
+
+#topbar {
+	float: left;
+	clear: both;
+	position: relative;
+	height: 50px;
+	width: 100%;
+	background-color: #9CEF6C;
+	border-bottom: solid #7EEF3C 2px;
+}
+
+#logo {
+	float: left;
+	clear: none;
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial Narrow;
+}
+
+#rightbar {
+	
+}
+
+#feed {
+	padding-top: 1ex;
+	width: 350px;
+	position: relative;
+	left: 20%;
+}
+
+.feeditem {
+	margin-bottom: 1ex;
+	padding: 1em;
+	background-color: #9CEF6C;
+	border: solid #7EEF3C 2px;
+	
+}

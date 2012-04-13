@@ -1,0 +1,5 @@
+CREATE TABLE knownprofiles (
+	id INTEGER PRIMARY KEY NOT NULL,
+	guid TEXT NOT NULL,
+	displayname TEXT NOT NULL
+);

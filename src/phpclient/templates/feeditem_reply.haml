@@ -1,0 +1,8 @@
+.reply.feeditem.inner
+ = "Reply to:"
+ = person_link(SocialHelpers::profile('',$feeditem->from, 'displayname'), $feeditem->from)
+ %form{:method=>"POST", :action=>"replyread.php"}
+  %input{:type=>"hidden", :name=> "reply", :value=> "#{$replyingto}"}
+  %input{:type=>"hidden", :name=> "returnto", :value=> "#{$returnto}"}
+  %textarea{:name => "comment"}
+  %input{:type=>"submit", :name => "commented", :value="Reply"}

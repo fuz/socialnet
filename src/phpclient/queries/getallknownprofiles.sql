@@ -1,0 +1,1 @@
+SELECT displayname, guid FROM knownprofiles;

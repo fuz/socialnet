@@ -1,0 +1,12 @@
+.statusupdate
+ %h1= "Update my Status"
+ .newstatus
+  %form{:method=>"POST"}
+   %select{:name=>"recipients[]", :size => "5",:multiple => "multiple"}
+    - foreach($known as $name => $guids)
+     %option{:name="#{$name}", :value="#{$name}"}
+      =ucwords($name)
+   %textarea{:name => "status"}
+    = "What's on your mind?"
+   %input{:type=>"submit", :name => "updated", :value="Update"}
+ 

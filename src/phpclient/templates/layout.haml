@@ -1,0 +1,22 @@
+!!! Strict
+%html
+ %head
+  %title= $title
+  %link(rel="stylesheet" type="text/css" href="style.css")
+ %body
+  #topbar
+   %h1#logo= "SocialNet"
+   .menu
+    -if (is_logged())
+     Logged in as #{$auth->getUser()->profile->displayname;} | 
+     -foreach($menulinks as $display => $link)
+      link_to(array('href'=> page_filename($link)), $display)
+      = " | "
+     %a{:href=> "logout.php"} Logout
+    -else 
+     Not logged in.
+
+  #content
+   -foreach($mainpage as $page)
+    :php
+     include($page);

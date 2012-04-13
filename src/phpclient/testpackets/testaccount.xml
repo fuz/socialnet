@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!--
+An account represents a user
+-->
+
+<account>
+<!-- Contains a userprofile too -->
+	<guid>SOME GUID HERE</guid>
+	<userprofile>
+		<guid>666</guid>
+		<publickey>
+		c2FtJ3MgcHVibGljIGtleQ==
+		</publickey>
+		
+	<communication default="email">
+		<commstrategy driver="email">
+			mailto:fuz@example.net
+		</commstrategy>
+	</communication>
+		
+	<name>
+		<displayname>fuz</displayname>
+		<firstname>fuz</firstname>
+		<middlename>the</middlename>
+		<lastname>NETFUZZ</lastname>
+	</name>
+	<accountemail>fuz@example.net</accountemail>
+	
+	<relationship>complicated</relationship>
+	
+	<interests>
+		<interest>programming</interest>
+		<interest>technology</interest>
+		<interest>software</interest>
+	</interests>
+	
+	<contactdetails>
+		<emails>
+			<email type="personal">fuz@example.net</email>
+			<email>fuz@example.net</email>
+		</emails>
+	
+	</contactdetails>
+	
+	<settings>
+		<skin>blueskin</skin>
+		<publishemail>false</publishemail>
+		<!-- please don't publish my email address -->
+		
+	</settings>
+	</userprofile>
+	
+	<privatekey>
+	TESTKEY
+	</privatekey>
+
+
+</account>

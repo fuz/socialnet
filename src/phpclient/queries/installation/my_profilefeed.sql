@@ -1,0 +1,4 @@
+CREATE TABLE my_profilefeed (
+	id INTEGER PRIMARY KEY NOT NULL,
+	guid TEXT NOT NULL
+);

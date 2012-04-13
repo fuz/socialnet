@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<userprofile id="479rz84h8dhdf09034i03403jrje">
+	
+	<publickey>
+		generate-key
+	</publickey>
+
+	<guid></guid>
+
+	<communication default="httppost">
+		<commstrategy driver="httppost">	
+			http://localhost/client/server.php
+		</commstrategy>
+	</communication>
+
+	<accountemail>
+	text
+	</accountemail>
+	
+	<name>
+		<displayname>text</displayname>
+		<firstname>text</firstname>
+		<middlename>text</middlename>
+		<lastname>text</lastname>
+	</name>
+	
+	<relationship>dropdown:it's complicated|single</relationship>
+	
+	<interests>
+		<interest>programming</interest>
+		<interest>technology</interest>
+		<interest>software</interest>
+	</interests>
+	
+	<contactdetails>
+		<emails>
+			<email type="personal">text</email>
+		</emails>
+	
+	</contactdetails>
+	
+	<settings>
+		<skin>dropdown:blue|red</skin>
+		<publishemail>radio</publishemail> <!-- please don't publish my email address -->
+		
+	</settings>
+
+</userprofile>

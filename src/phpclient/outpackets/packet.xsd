@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           xmlns:snk="https://github.com/fuz/socialnet"
+           targetNamespace="https://github.com/fuz/socialnet"
+           >
+
+    <xs:element name="packet">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element name="statusupdate" type="snk:statusupdate"/>
+                <xs:element name="comment" type="snk:comment"/>
+                
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+
+   <xs:complexType name="comment" mixed="false">
+     <xs:sequence>
+       <xs:element name="metadata" type="snk:metadata" minOccurs="1"/>
+       <xs:element name="message" type="xs:string" minOccurs="1"/>
+     </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="recipients" mixed="false">
+     <xs:choice>
+       <xs:element name="recipient" type="xs:string" minOccurs="1"/>
+     </xs:choice>
+   </xs:complexType>
+
+   <xs:complexType name="statusupdate" mixed="false">
+     <xs:sequence>
+       <xs:element name="metadata" type="snk:metadata" minOccurs="1" maxOccurs="1"/>
+       <xs:element name="message" type="xs:string"/>
+     </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="metadata" mixed="false">
+     <xs:sequence>
+       <xs:element name="guid" type="xs:string"/>
+       <xs:element name="from" type="xs:string"/>
+       <xs:element name="sentdate" type="xs:string"/>
+       <xs:element name="recipients" type="snk:recipients"/>
+     </xs:sequence>
+   </xs:complexType>
+
+</xs:schema>

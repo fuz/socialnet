@@ -1,0 +1,5 @@
+CREATE TABLE test (
+	guid TEXT PRIMARY KEY,
+	name TEXT NOT NULL,
+	commstring TEXT NOT NULL
+);

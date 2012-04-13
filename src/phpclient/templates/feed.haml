@@ -1,0 +1,8 @@
+#feed
+ -foreach ($feeditems as $feeditem)
+  .feeditem
+   :php
+    include($feeditem->compiled_template);
+  -if($replying && $feeditem->guid == $replyingto)
+   :php
+    include($replytemplate);
