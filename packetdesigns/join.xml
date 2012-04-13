@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+
+
+<packet>
+
+<!--
+The announce packet is used when a user becomes associated with a group or some
+kind of page. This allows contacts to notify one another when they take part in
+something.
+-->
+
+	<join>
+		<target type="fanpage" id="daa8f55f-d8fc-41d1-996a-0b9fded2d718"/>
+		<announced>false</announced>
+	</join>
+
+</packet>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<userprofile id="479rz84h8dhdf09034i03403jrje">
+	
+	<publickey>
+		c2FtJ3MgcHVibGljIGtleQ==
+	</publickey>
+	<name>
+		<displayname>fuz</displayname>
+		<firstname>fuz</firstname>
+		<middlename>the</middlename>
+		<lastname>NETFUZ</lastname>
+	</name>
+
+	<accountemail>fuz@example.com</accountemail>
+	
+	<relationship>complicated</relationship>
+	
+	<interests>
+		<interest>programming</interest>
+		<interest>technology</interest>
+		<interest>software</interest>
+	</interests>
+	
+	<contactdetails>
+		<emails>
+			<!-- There can be two types of emails: personal, work -->
+			<email type="personal">fuz@example.com</email>
+			<email type="work">fuz@example.com</email>
+		</emails>
+	
+	</contactdetails>
+	
+	<settings>
+		<skin>blueskin</skin>
+		<publishemail>false</publishemail>
+		<!-- please don't publish my email address -->
+		
+	</settings>
+
+</userprofile>

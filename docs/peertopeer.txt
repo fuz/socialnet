@@ -1,0 +1,47 @@
+
+===
+PHP CLIENT ARCHITECTURE
+===
+
+        HTTP             XML                  HTTP      
+SENDER ---> PHP SERVER <-------> PHP SERVER <------ RECIPIENTS
+
+In this architecture, the FRONTEND is a web page, the ENGINE is on the web 
+server.
+
+1. A user accesses local SocialNet server, they interact with a HTML/CSS frontend.
+ We do not need to do Javascript stuff at first, this can come slightly later.
+
+2. User causes uses a feature on the web based frontend:
+ - changes a status
+ - writes/replies to a comment
+ - updates their profile
+
+3. Local SocialNet generates a packet that describes the action and becomes the
+SENDER. They send this packet to other RECIPIENTS as a HTTP request.
+
+4. If online, the RECIPIENTS (or RECIPIENT) accept the packet and update the
+USERDATA.
+
+5. The RECIPIENTS may generate a packet of their own to send back to the SENDER.
+
+In this architecture, all recipients must be online in order to receive
+notifications. CLIENTS will have to hold onto messages until a RECIPIENT comes
+online in order to ensure that they are sent. 
+
+===
+JAVA ARCHITECTURE
+===
+
+This is essentially the same as the above except that:
+ 1. The FRONTEND is also the ENGINE. The FRONTEND might be a SWING GUI and the 
+ ENGINE might just be some network threads.
+
+===
+EMAIL PACKET TRANSFER
+===
+
+This is my ultimate goal for a decentralized social network. All the packets are
+transmitted over email using SMTP and received by IMAP or POP.
+
+ 

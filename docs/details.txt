@@ -1,0 +1,61 @@
+This is the design for the PHP client socialnetwork software.
+
+There are two components that run on the server.
+
+Monitor /inpackets folder for new files.
+When a new file is detected, parse the file and convert it into a PHP object
+that reflects the contents of the packet.
+
+
+===
+XML Transfer
+===
+
+How will the XML packets be transferred between client machines?
+ - Email is the most likely choice because it is relatively instant and packets
+ are preserved even if the recipient is offline.
+  - XMPP would provide real time packet transfer and so client updates would be 
+  instant.
+  - BitTorrent protocol would provide reasonably fast packet transfer and would
+  allow media to be shared quicker.
+
+===
+
+
+ 1. A user creates an account using a client. This asks the user some details
+ about themselves, including a login name, password and email address.
+
+ 2. The user is asked for some contact details of some friends. This is likely
+ to be an email address or a website.
+
+ 3. The client attempts to bootstrap itself with the new contacts by sending
+ newuser packets. In the meantime the user is welcome to begin creating a profile
+ and writing about themselves. They can also see the progress of bootstrapping
+ to the network. This could be represented by a graph visualization.
+
+ 4. If the original bootstrapped friends take a while to initially come online,
+  the client will batch up all the user's changes to their profile before sending
+  them all-at-once.
+
+  5. The bootstrapping friends will spread the contact's existence with the same
+  newuser packet which will be propagated throughout the network.
+
+===
+Email Integration
+===
+
+In order to ensure that the system is usable as a social interface the client
+should also act as an email client. Users who do not have accounts will still
+appear within the system as users who can be sent or receive private messages.
+
+Email headers could use an ID.
+
+===
+Chat Integration
+===
+
+The chat integration can use other protocols for instant messaging such as the
+XMPP protocol. Or even as the main protocol.
+
+
+

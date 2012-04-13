@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<packet>
+
+<!--
+This packet is used when someone is joining the network. It published
+the user's details that are needed to communicate.
+
+The difficult part is bootstrapping a user on the network because it should
+be encrypted. At this point, nobody knows this user's public keys so data must
+be send unencrypted.
+
+Bob (not on the social network) creates a new account in his client providing
+his userprofile details.
+He then needs to add at least one friend, he provides alice@example.com
+as the email address. This is then what is sent to Alice.
+
+Alice receives the newuser request and uses the public key sent within it to
+reply.
+
+
+ -->
+
+	<newuser>
+		<publickey>c2FtJ3MgcHVibGljIGtleQ==</publickey>
+		<displayname>Bob</displayname>
+	</newuser>
+
+</packet>

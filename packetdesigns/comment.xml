@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<packet>
+
+<comment>
+    <published>04/08/2011</published>
+    <author>
+    	<!-- Bob -->
+	<userref id="474ee9ee179b0ecf0bc27408079a0b15eda4c99d"/>
+    </author>
+
+<!-- The recipients of a comment are where the comment should appear under. -->
+
+    <recipients>
+        <blogpost id="4jh32384484885489" />
+    </recipients>
+
+    <contents>
+    I really like this programme!
+    </contents>
+    
+</comment>
+
+</paket>

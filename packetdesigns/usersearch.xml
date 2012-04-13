@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<packet>
+
+<!-- The search packet is used by a user who is seeking another user.
+This might happen when a user does not know another's email address. Like
+Facebook, people simply provide a full names which they use to search Facebook.
+
+ 
+This aims to implement the same feature. This packet is generated when users use
+the search feature in their clients. The packet is encrypted and signed by the
+searcher and delivered to their friends. The friends then use the packet to look for matching users.
+
+-->
+
+	<search>
+		<name>
+			<!-- Each field is a hashed version of the data in userprofile.xml
+			packet.
+			A user receiving this file will search for people they know
+			using the following hashes.-->
+			<displayname>07d90567a26e01a3c54532d6fac024f9352a4b1d</displayname>
+			<firstname>265dc298e8767361f7e407e746c90f399678a5ea</firstname>
+			<middlename>f8c38b2167c0ab6d7c720e47c2139428d77d8b6a</middlename>
+			<lastname>fe6a14def2be8972d42c30f296c8519567edc8ee</lastname>
+		</name>
+	</search>
+
+	<searchreply>
+		<results>
+			<userprofile>
+				<!-- See userprofile.xml -->
+			</userprofile>
+		</results>
+	</searchreply>
+
+</packet>

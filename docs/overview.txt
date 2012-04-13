@@ -1,0 +1,30 @@
+Component Overviw
+
+
+
+	CORE		The actual business logic of the Social Network. Reads the
+			actual packets and decides what to do with them.
+
+	ACCOUNT		The account layer manages the accounts and profiles of
+	LAYER		all users of a client or a server.
+
+	DATA		The data model used by the social network for transfer
+			between users and when storing in a database.
+
+	TEMPLATING	How the Social Network appears to users.
+
+	STORAGE		The infrastructure needed to persist data for a user.
+			This is where the USERDATA is kept. It contains a user's
+			FEEDS and CONTACT LIST.
+
+	ENGINE		The engine is the interface for
+			transmitting packets.
+
+	SENDER		The sender are implementations for protocol specific
+			PACKET transfer.
+
+	PARSER		Reads packet files and XML data to produce in memory
+			DATA models.
+
+	PACKET		The packet fetcher collects packets from the file system.
+	FETCHER		

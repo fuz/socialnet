@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<packet>
+	<statusupdate>
+		<message>
+			@<userref id="474ee9ee179b0ecf0bc27408079a0b15eda4c99d"/>: I am sharing this message on our
+			social network, what do you think?
+		</message>
+
+	<mentioned>
+		<user id="474ee9ee179b0ecf0bc27408079a0b15eda4c99d">
+			<displayname>Alice</displayname>
+			<email>alice@example.com</email>
+			<publickey>cm9iaW4ncyBwdWJsaWMga2V5</publickey>
+		</user>
+	</mentioned>
+
+	</statusupdate>
+	
+</packet>

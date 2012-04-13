@@ -1,0 +1,21 @@
+HOW TO MAKE THE SOCIAL NET SPREAD THE WORLD
+===
+
+0. Establish a name for our SocialNet
+
+1. Open Source the protocol specification and our code. We don't have to open
+source it ALL.
+
+2. Publish on GitHub
+
+3. Encourage people to write their own frontends.
+
+4. Write packet processing libraries in PHP, Java, Ruby and Python
+
+5. Write articles titled:		(this is meant in part jest)
+	"Bringing Public Key Encryption to the Masses"
+	"A Social Network that Keeps Your Data Secure"
+	"Decentralized Social Networking: Myth or Fact?"
+	"Why other decentralized social networks have failed"
+	
+	

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<packet>
+	<blogpost>
+		<title>Just Discovered Gobby! :D</title>
+		<published>04/08/2011</published>
+		<authors>
+			<!-- Friend -->
+			<userref id="474ee9ee179b0ecf0bc27408079a0b15eda4c99d"/>
+			<!-- Fuz -->
+			<userref id="479rz84h8dhdf09034i03403jrje"/>		
+
+		</authors>
+
+		<recipients>
+			<contacts of="474ee9ee179b0ecf0bc27408079a0b15eda4c99d"/>
+			<contacts of="479rz84h8dhdf09034i03403jrje"/>
+			<usergroup id="her78hf8sdz8fsdz8ze8">friends</usergroup>
+		</recipients>
+
+
+		<!--
+		The blog contents is what the blog contains. This has a type,
+		examples are html, wiki formatting, bb code, markdown and textile.
+		-->
+                <contents format="text/html">
+			<img src="gobby-logo.png"/>
+                We are glad to announce that we have just discovered Gobby, a programme, which will allow us to  			edit and modify files more efficiently. You should try it too!
+                </contents>
+
+		<tags>
+			<tag>technology</tag>
+			<tag>software</tag>
+		</tags>
+
+		<preferences>
+			<!-- If this is true, users who see this post can 
+			add comments to the article. -->
+			<allowcomments>false</allowcomments>
+			<!-- This might be used if this post is unsuitable for minors. -->
+			<adultpost>false</adultpost>
+			<!-- If this is true, users can 'share' the blog post with their 					friends with a share button. -->
+			<sharable>true</sharable>
+		</preferences>
+
+		<!-- These are things that this blog posts needs to display, like
+		an accompanying video or picture. -->
+                <resources>
+                
+			<file id="gobby-logo.png" title="gobby icon"
+				type="image/png"/>
+			<file id="video-demo.mp4" title="video demonstration"
+				type="video/mpeg"/>
+                </resources>
+	</blogpost>
+
+</packet>

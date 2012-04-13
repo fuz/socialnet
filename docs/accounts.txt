@@ -1,0 +1,12 @@
+How do users create 'accounts'?
+
+ 1. Users access the register/create an account in a client
+
+ 2. They are asked some details about themselves, such as:
+  Name, Email address and a password.
+
+ 3. The client then generates a public and private key and an ACCOUNTFILE is created.
+    The ACCOUNTFILE contains a private key and a USERPROFILE packet.
+
+ 4. The password that the user provided is used as the passphrase for the private key.
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<packet>
+
+	<fileupload>
+		<!-- A unique identifier for the file upload. (sha of 'photo') -->
+		<id>eeb35d331bddcddfdbb0a6d16f64120bb01356fd</id>
+		
+		<!-- This is a custom type that the client software uses to distinguish
+		types of uploads. The client may decide to display the upload
+		differently depending on the type. -->
+		<type>socialnet/photoalbum</type>
+		
+		<title>Holiday Photo Collection</title>
+		<filename>photos.zip</filename>
+		
+		<!-- File size in bytes. -->
+		<size>345623636</size>
+
+		<!-- A file upload can contain a collection of files which may
+		be downloaded independently. -->
+		<contains>
+			<file name="picture01.jpg" position="0" type="image/jpg"/>
+			<file name="picture02.jpg" position="143266" type="image/jpg"/>			
+		</contains>
+		
+	</fileupload>
+
+</packet>

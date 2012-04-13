@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!--
+The metadata element is a common element that encapsulates the details of the
+packet.
+ -->
+
+<metadata>
+	<from>54bc7953-929e-4e58-9702-94c3fc313940</from>
+	<recipients>
+		<recipient>a0c76793-b098-4ddb-b4d3-fc96a7ad9be6</recipient>
+		<recipient>d0320b92-6900-4036-8be2-cabd691eb5ba</recipient>
+		<recipient>1805b242-f937-4db7-a787-26d24c871002</recipient>
+		<recipient>b6d3041d-b38a-481b-a277-825bab0e8a03</recipient>
+
+	</recipients>
+	
+	<senddate>2011-08-10T23:36:59+01:00</sentdate>
+
+</metadata>

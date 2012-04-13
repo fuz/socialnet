@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<packet>
+	<event guid="97369ce3-e252-4a99-8c62-8131cb0057f4">
+		<recipients>
+			<to>474ee9ee179b0ecf0bc27408079a0b15eda4c99d</to>
+		</recipients>
+		
+		<title>Bob's Somecountry Visit</title>
+		<from>26/02/2009</from>
+		<to>4/03/2009</to>
+		
+		<location>
+			<country>Somecountry</country>
+			<coordinates>03537656</coordinates> <!-- for displaying on a Map -->
+		</location>
+		
+		<creator>
+			479rz84h8dhdf09034i03403jrje
+		</creator>
+		
+		<admins> <!-- For event wall and discussion board. -->
+			<userref>479rz84h8dhdf09034i03403jrje</userref>
+			<userref>474ee9ee179b0ecf0bc27408079a0b15eda4c99d</userref>
+		</admins>
+		
+		<public>true</public> <!-- Anyone can comment on this event. -->
+		
+		<description>
+			My visit to see you!
+		</description>
+	</event>
+</packet>
