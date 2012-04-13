@@ -66,7 +66,7 @@ if (isset($_POST["submit"])) {
 	$imapconfig = array(
 		'username' => $fresh->accountemail,
 		'password' => $password,
-		'server' => '{sam.sam:143}',
+		'server' => '{fuz.fuz:143}',
 		
 	);
 	$smtpconfig = array(

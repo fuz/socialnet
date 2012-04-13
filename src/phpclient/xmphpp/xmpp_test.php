@@ -7,7 +7,7 @@ include 'XMPPHP/XMPP.php';
 
 #Use XMPPHP_Log::LEVEL_VERBOSE to get more logging for error reports
 #If this doesn't work, are you running 64-bit PHP with < 5.2.6?
-$conn = new XMPPHP_XMPP('sam.sam', 5222, 'sam', 'cheese', 'xmpphp', 'sam.sam', $printlog=true, $loglevel=XMPPHP_Log::LEVEL_INFO);
+$conn = new XMPPHP_XMPP('fuz.fuz', 5222, 'fuz', 'cheese', 'xmpphp', 'fuz.fuz', $printlog=true, $loglevel=XMPPHP_Log::LEVEL_INFO);
 $conn->autoSubscribe();
 
 $vcard_request = array();

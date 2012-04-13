@@ -9,7 +9,7 @@ print "<pre>";
 
 #Use XMPPHP_Log::LEVEL_VERBOSE to get more logging for error reports
 #If this doesn't work, are you running 64-bit PHP with < 5.2.6?
-$conn = new XMPPHP_BOSH('sam.sam', 5280, 'sam@sam.sam', 'cheese', 'xmpphp', 'sam.sam', $printlog=true, $loglevel=XMPPHP_Log::LEVEL_VERBOSE);
+$conn = new XMPPHP_BOSH('fuz.fuz', 5280, 'fuz@fuz.fuz', 'cheese', 'xmpphp', 'fuz.fuz', $printlog=true, $loglevel=XMPPHP_Log::LEVEL_VERBOSE);
 $conn->autoSubscribe();
 
 try {
@@ -19,7 +19,7 @@ try {
 			flush();
 		}
 	}
-	$conn->connect('http://sam.sam:5280/xmpp-httpbind', 1, true);
+	$conn->connect('http://fuz.fuz:5280/xmpp-httpbind', 1, true);
 	#while(true) {
 			$payloads = $conn->processUntil(array('message', 'presence', 'end_stream', 'session_start'));
 			foreach($payloads as $event) {
